@@ -18,6 +18,7 @@ const SignUp = () => {
                 navigate('/login');
             }
         }).catch(err=>{
+            alert("Username / Email id already registered");
             console.log(err);
         })
     }

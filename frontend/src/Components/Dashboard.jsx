@@ -11,11 +11,13 @@ const Dashboard = () => {
 
                 }
                 else{
-                    navigate('/home');
+                    alert("Session Expired! Please Login again");
+                    navigate('/login');
+                    // console.log("Token invalid")
                 }
             }).catch(err=>{
-                alert("Please login again");
-                navigate('/home');
+                alert("Session Expired! Please Login again");
+                navigate('/login');
             })
     },[])
   return (

@@ -9,6 +9,7 @@ const Home = () => {
     axios.get('http://localhost:5000/api/logout')
       .then(res=>{
         if(res.data.status){
+          alert("Logged Out")
           navigate('/login')
         }
       }).catch(err=>{

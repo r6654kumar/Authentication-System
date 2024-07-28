@@ -17,6 +17,7 @@ const Login = () => {
                 navigate('/home');
             }
         }).catch(err=>{
+            alert("Incorrect Email and Password Combination");
             console.log(err);
         })
     }
